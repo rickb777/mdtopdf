@@ -1,5 +1,17 @@
 # Heading One
+Here are lines of Russian:  
+
+- Молоко и творог  
+- Съешь же ещё этих мягких французских булок, да выпей чаю  
+
 This is a paragraph with some *emphasized text* - OK?
+
+¡¢£¤¥
+
+`¬| 1!¹¡ 2"²⅛ 3£³£ 4$€¼ 5%½⅜ 6^¾⅝ 7&{⅞ 8*™ 9(]± 0)}° -_\¿ =+
+qQ@Ω wWłŁ eEeE rR¶® tTŧŦ yY←¥ uU↓↑ iI→ı oOøØ pPþÞ
+aAæÆ sSß§ dDðÐ fFđª gGŋŊ hHħĦ jJ kKĸ& lLłŁ ;: '@
+zZ«< xX»> cC¢© vV“‘ bB”’ nNnN mMµº ,<─× .>·÷ /?
 
 Here is an unordered list:
 
@@ -78,11 +90,11 @@ The below is a blockquote with inner codeblocks.
 >         return "working";
 >     }
 
-Here is the gofpdf logo (inline): ![from https://github.com/jung-kurt/gofpdf/tree/master/image](../image/fpdf.png)
+Here is the gofpdf logo (inline): ![from https://github.com/jung-kurt/gofpdf/tree/master/image](../../image/fpdf.png)
 
 Here is a Gopher:
 
-![from https://github.com/egonelbre/gophers](../image/hiking.png "Optional title")
+![from https://github.com/egonelbre/gophers](../../image/hiking.png "Optional title")
 
 *The Go gopher was designed by Renee French. The Gopher character design is licensed under the Creative Commons 3.0 Attributions license. Read http://blog.golang.org/gopher for more details.*
 

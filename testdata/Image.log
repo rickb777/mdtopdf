@@ -124,7 +124,7 @@
 [cr()] LH=14
 [Text] Here is a non-existent image... should generate a message in trace file. 
 [Image (entering)] Destination[./image/xbay.jpg] Title[Does not exist!]
-[Image (file error)] CreateFile ./image/xbay.jpg: The system cannot find the file specified.
+[Image (file error)] stat ./image/xbay.jpg: no such file or directory
 [Text] Not from https://jpeg.org/images/jpeg-home.jpg
 [Image (leaving)] 
 [Paragraph (leaving)] 

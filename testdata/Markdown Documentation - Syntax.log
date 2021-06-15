@@ -17,6 +17,7 @@
 [Unordered List (entering)] {16 true 0 0 [] false}
 [... List Left Margin] set to 58.338
 -[Unordered Item (entering) #1] {16 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -29,8 +30,8 @@
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered List (entering)] {16 true 0 0 [] false}
 --[... List Left Margin] set to 88.326
---[cr()] LH=14
 ---[Unordered Item (entering) #1] {16 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -42,8 +43,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {16 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #2] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -55,8 +56,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #3] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -68,13 +69,11 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered List (leaving)] {16 true 0 0 [] false}
 ---[... Reset List Left Margin] re-set to 58.337999999999994
---[cr()] LH=14
 --[Unordered Item (leaving)] {16 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #2] {0 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -87,8 +86,8 @@
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered List (entering)] {16 true 0 0 [] false}
 --[... List Left Margin] set to 88.326
---[cr()] LH=14
 ---[Unordered Item (entering) #1] {16 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -100,8 +99,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {16 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #2] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -113,8 +112,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #3] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -126,8 +125,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #4] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -139,8 +138,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #5] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -152,8 +151,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #6] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -165,13 +164,11 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered List (leaving)] {16 true 0 0 [] false}
 ---[... Reset List Left Margin] re-set to 58.337999999999994
---[cr()] LH=14
 --[Unordered Item (leaving)] {0 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #3] {0 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -184,8 +181,8 @@
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered List (entering)] {16 true 0 0 [] false}
 --[... List Left Margin] set to 88.326
---[cr()] LH=14
 ---[Unordered Item (entering) #1] {16 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -197,8 +194,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {16 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #2] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -210,8 +207,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #3] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -223,8 +220,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #4] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -236,13 +233,11 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered List (leaving)] {16 true 0 0 [] false}
 ---[... Reset List Left Margin] re-set to 58.337999999999994
---[cr()] LH=14
 --[Unordered Item (leaving)] {0 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #4] {32 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -255,8 +250,8 @@
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered List (entering)] {16 true 0 0 [] false}
 --[... List Left Margin] set to 88.326
---[cr()] LH=14
 ---[Unordered Item (entering) #1] {16 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -268,8 +263,8 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {16 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered Item (entering) #2] {0 false 42 46 [] false}
+---[cr()] LH=14
 ----[Paragraph (entering)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[First Para within a list] breaking
@@ -281,12 +276,9 @@
 ----[Paragraph (leaving)] 
 ----[... Margins (left, top, right, bottom:] 128.31 28.35 28.35 56.7
 ----[Unordered Item (leaving)] {0 false 42 46 [] false}
-----[cr()] LH=14
 ---[Unordered List (leaving)] {16 true 0 0 [] false}
 ---[... Reset List Left Margin] re-set to 58.337999999999994
---[cr()] LH=14
 --[Unordered Item (leaving)] {32 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered List (leaving)] {16 true 0 0 [] false}
 -[... Reset List Left Margin] re-set to 28.35
 [cr()] LH=14
@@ -305,11 +297,10 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [HorizontalRule] 
 [cr()] LH=14
-[... From X,Y] 28.35,573.35
-[...   To X,Y] 583.65,573.35
+[... From X,Y] 28.35,447.35
+[...   To X,Y] 583.65,447.35
 [cr()] LH=14
 [HTMLBlock] <h2 id="overview">Overview</h2>
 [cr()] LH=14
@@ -323,7 +314,6 @@
 [Text] Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -356,7 +346,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -367,7 +356,6 @@
 [Text] . Markdown lists look like, well, lists. Even blockquotes look like quoted passages of text, assuming you've ever used email.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [HTMLBlock] <h3 id="html">Inline HTML</h3>
 [cr()] LH=14
@@ -382,7 +370,6 @@
 [Text]  for the web.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -403,14 +390,12 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] For any markup that is not covered by Markdown's syntax, you simply use HTML itself. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML; you just use the tags.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -429,7 +414,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -437,8 +421,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -447,7 +431,6 @@
 [Text]  inside an HTML block.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -466,7 +449,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -477,7 +459,6 @@
 [Text]  processed within span-level tags.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [HTMLBlock] <h3 id="autoescape">Automatic Escaping for Special Characters</h3>
 [cr()] LH=14
@@ -497,7 +478,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -507,8 +487,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -516,8 +496,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -526,7 +506,6 @@
 [Text]  attribute. Needless to say, this is easy to forget, and is probably the single most common source of HTML validation errors in otherwise well-marked-up web sites.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -537,7 +516,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -545,8 +523,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -554,8 +532,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -563,8 +541,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -576,8 +554,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -585,8 +563,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -602,11 +580,10 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [HorizontalRule] 
 [cr()] LH=14
-[... From X,Y] 28.35,192.35
-[...   To X,Y] 583.65,192.35
+[... From X,Y] 28.35,602.35
+[...   To X,Y] 583.65,602.35
 [cr()] LH=14
 [HTMLBlock] <h2 id="block">Block Elements</h2>
 [cr()] LH=14
@@ -621,7 +598,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -630,7 +606,6 @@
 [Text]  tag.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -644,7 +619,6 @@
 [Text]  break tag using Markdown, you end a line with two or more spaces, then type return.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -665,7 +639,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [HTMLBlock] <h3 id="header">Headers</h3>
 [cr()] LH=14
 [cr()] LH=14
@@ -684,7 +657,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -692,8 +664,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -705,7 +677,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -713,8 +684,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -722,8 +693,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [HTMLBlock] <h3 id="blockquote">Blockquotes</h3>
 [cr()] LH=14
 [cr()] LH=14
@@ -738,8 +709,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -749,8 +720,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -760,8 +731,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -769,15 +740,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] Any decent text editor should make email-style quoting easy. For example, with BBEdit, you can make a selection and choose Increase Quote Level from the Text menu.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [HTMLBlock] <h3 id="list">Lists</h3>
 [cr()] LH=14
@@ -789,7 +759,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -797,8 +766,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -806,8 +775,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -815,8 +784,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -824,8 +793,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -833,8 +802,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -842,8 +811,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -851,15 +820,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] you'd get the exact same HTML output. The point is, if you want to, you can use ordinal numbers in your ordered Markdown lists, so that the numbers in your source match the numbers in your published HTML. But if you want to be lazy, you don't have to.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -868,14 +836,12 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] List markers typically start at the left margin, but may be indented by up to three spaces. List markers must be followed by one or more spaces or a tab.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -884,8 +850,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -893,8 +859,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -904,8 +870,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -913,8 +879,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -922,8 +888,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -931,8 +897,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -940,8 +906,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -949,8 +915,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -960,8 +926,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -973,8 +939,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -982,8 +948,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -995,8 +961,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [HTMLBlock] <h3 id="precode">Code Blocks</h3>
 [cr()] LH=14
 [cr()] LH=14
@@ -1011,7 +977,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1019,8 +984,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1028,8 +993,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1037,8 +1002,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1046,15 +1011,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] A code block continues until it reaches a line that is not indented (or the end of the article).
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1069,8 +1033,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1078,15 +1042,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] Regular Markdown syntax is not processed within code blocks. E.g., asterisks are just literal asterisks within a code block. This means it's also easy to use Markdown to write about Markdown's own syntax.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [HTMLBlock] <h3 id="hr">Horizontal Rules</h3>
 [cr()] LH=14
@@ -1100,12 +1063,12 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [HorizontalRule] 
 [cr()] LH=14
-[... From X,Y] 28.35,522.35
-[...   To X,Y] 583.65,522.35
+[... From X,Y] 28.35,348.35
+[...   To X,Y] 583.65,348.35
 [cr()] LH=14
 [HTMLBlock] <h2 id="span">Span Elements</h2>
 [cr()] LH=14
@@ -1128,14 +1091,12 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] In both styles, the link text is delimited by [square brackets].
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1148,8 +1109,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1157,8 +1118,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1166,8 +1127,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1175,8 +1136,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1184,8 +1145,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1193,8 +1154,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1202,10 +1163,10 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Unordered List (entering)] {16 true 0 0 [] false}
 [... List Left Margin] set to 58.338
 -[Unordered Item (entering) #1] {16 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1213,8 +1174,8 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {16 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #2] {0 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1222,8 +1183,8 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {0 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #3] {0 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1231,8 +1192,8 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {0 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #4] {0 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1240,8 +1201,8 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {0 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #5] {32 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1249,7 +1210,6 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {32 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered List (leaving)] {16 true 0 0 [] false}
 -[... Reset List Left Margin] re-set to 28.35
 [cr()] LH=14
@@ -1260,8 +1220,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1269,15 +1229,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] Link definitions are only used for creating links during Markdown processing, and are stripped from your document in the HTML output.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1290,15 +1249,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] are equivalent.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1311,8 +1269,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1320,8 +1278,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1329,8 +1287,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1338,15 +1296,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] Link definitions can be placed anywhere in your Markdown document. I tend to put them immediately after each paragraph in which they're used, but if you want, you can put them all at the end of your document, sort of like footnotes.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1355,8 +1312,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1364,8 +1321,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1373,8 +1330,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1382,8 +1339,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1391,14 +1348,12 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] With Markdown's reference-style links, a source document much more closely resembles the final output, as rendered in a browser. By allowing you to move the markup-related metadata out of the paragraph, you can add links without interrupting the narrative flow of your prose.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [HTMLBlock] <h3 id="em">Emphasis</h3>
 [cr()] LH=14
@@ -1426,8 +1381,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1435,15 +1390,14 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] You can use whichever style you prefer; the lone restriction is that the same character must be used to open and close an emphasis span.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1452,8 +1406,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1465,7 +1419,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1473,8 +1426,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [HTMLBlock] <h3 id="code">Code</h3>
 [cr()] LH=14
 [cr()] LH=14
@@ -1487,8 +1440,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1496,8 +1449,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1505,8 +1458,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1514,8 +1467,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1523,8 +1476,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1532,8 +1485,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1541,8 +1494,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1550,8 +1503,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1559,8 +1512,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1568,8 +1521,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [HTMLBlock] <h3 id="img">Images</h3>
 [cr()] LH=14
 [cr()] LH=14
@@ -1579,7 +1532,6 @@
 [Text] Admittedly, it's fairly difficult to devise a "natural" syntax for placing images into a plain text document format.
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
@@ -1596,7 +1548,6 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1604,8 +1555,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1613,10 +1564,10 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Unordered List (entering)] {16 true 0 0 [] false}
 [... List Left Margin] set to 58.338
 -[Unordered Item (entering) #1] {16 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1626,8 +1577,8 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {16 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #2] {0 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1637,8 +1588,8 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {0 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered Item (entering) #3] {32 false 42 46 [] false}
+-[cr()] LH=14
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -1648,7 +1599,6 @@
 --[Paragraph (leaving)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {32 false 42 46 [] false}
---[cr()] LH=14
 -[Unordered List (leaving)] {16 true 0 0 [] false}
 -[... Reset List Left Margin] re-set to 28.35
 [cr()] LH=14
@@ -1659,8 +1609,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1668,8 +1618,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1679,11 +1629,10 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [HorizontalRule] 
 [cr()] LH=14
-[... From X,Y] 28.35,42.35
-[...   To X,Y] 583.65,42.35
+[... From X,Y] 28.35,544.35
+[...   To X,Y] 583.65,544.35
 [cr()] LH=14
 [HTMLBlock] <h2 id="misc">Miscellaneous</h2>
 [cr()] LH=14
@@ -1698,8 +1647,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1707,8 +1656,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1716,8 +1665,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1725,8 +1674,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1734,14 +1683,12 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
 [Text] (This sort of entity-encoding trick will indeed fool many, if not most, address-harvesting bots, but it definitely won't fool all of them. It's better than nothing, but an address published in this way will probably eventually start receiving spam.)
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
 [cr()] LH=14
 [HTMLBlock] <h3 id="backslash">Backslash Escapes</h3>
 [cr()] LH=14
@@ -1755,8 +1702,8 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
@@ -1764,7 +1711,7 @@
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
 [cr()] LH=14
-[cr()] LH=14
 [Codeblock] {false [] 0 0 0}
+[cr()] LH=14
 [Document] Not Handled
 [RenderFooter] Not handled

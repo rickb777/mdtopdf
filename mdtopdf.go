@@ -10,11 +10,11 @@
  * This package depends on two other packages:
  *
  * Blackfriday Markdown Processor
- *   Available at http://github.com/russross/blackfriday
+ *   Available at http://github.com/russross/blackfriday (github.com/russross/blackfriday/v2
  *
  * gofpdf - a PDF document generator with high level support for
  *   text, drawing and images.
- *   Available at https://github.com/jung-kurt/gofpdf
+ *   Available at https://github.com/jung-kurt/gofpdf (github.com/jung-kurt/gofpdf/v2)
  */
 
 // Package mdtopdf converts markdown to PDF.
@@ -27,7 +27,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jung-kurt/gofpdf"
+	"github.com/jung-kurt/gofpdf/v2"
 	bf "github.com/russross/blackfriday/v2"
 )
 
@@ -174,34 +174,68 @@ func NewPdfRenderer(orient, papersz, pdfFile, tracerFile string) *PdfRenderer {
 	return r
 }
 
-// Process takes the markdown content, parses it to generate the PDF
 func (r *PdfRenderer) Process(content []byte) error {
 
 	// try to open tracer
-	var f *os.File
-	var err error
 	if r.tracerFile != "" {
-		f, err = os.Create(r.tracerFile)
+		f, err := os.Create(r.tracerFile)
 		if err != nil {
-			return fmt.Errorf("os.Create() on tracefile error:%v", err)
+			return fmt.Errorf("os.Create() on tracefile error: %w", err)
 		}
 		defer f.Close()
 		r.w = bufio.NewWriter(f)
 		defer r.w.Flush()
 	}
 
-	// Preprocess content by changing all CRLF to LF
-	s := string(content)
-	s = strings.Replace(s, "\r\n", "\n", -1)
+	_ = bf.Run(convertCRNL(content), bf.WithRenderer(r))
 
-	content = []byte(s)
-	_ = bf.Run(content, bf.WithRenderer(r))
-
-	err = r.Pdf.OutputFileAndClose(r.pdfFile)
+	err := r.Pdf.OutputFileAndClose(r.pdfFile)
 	if err != nil {
-		return fmt.Errorf("Pdf.OutputFileAndClose() error on %v:%v", r.pdfFile, err)
+		return fmt.Errorf("Pdf.OutputFileAndClose() error on %v: %w", r.pdfFile, err)
 	}
 	return nil
+}
+
+func (r *PdfRenderer) ProcessTo(w io.Writer, content []byte) error {
+
+	// try to open tracer
+	if r.tracerFile != "" {
+		f, err := os.Create(r.tracerFile)
+		if err != nil {
+			return fmt.Errorf("os.Create() on tracefile error: %w", err)
+		}
+		defer f.Close()
+		r.w = bufio.NewWriter(f)
+		defer r.w.Flush()
+	}
+
+	_ = bf.Run(convertCRNL(content), bf.WithRenderer(r))
+
+	err := r.Pdf.Output(w)
+	if err != nil {
+		return fmt.Errorf("Pdf.Output() error: %w", err)
+	}
+	return nil
+}
+
+// convertCRNL preprocesses content by changing all CRLF to LF
+func convertCRNL(content []byte) []byte {
+	// first check whether any CR-NL pairs exist; if not then we can save time
+	found := false
+	last := len(content) - 1
+	for i, b := range content {
+		if b == '\r' && i < last && content[i+1] == '\n' {
+			found = true
+			break
+		}
+	}
+
+	if !found {
+		return content // skip the expensive bit
+	}
+
+	// remove the CRs
+	return []byte(strings.ReplaceAll(string(content), "\r\n", "\n"))
 }
 
 func (r *PdfRenderer) setStyler(s Styler) {

@@ -14,7 +14,7 @@
  *
  * gofpdf - a PDF document generator with high level support for
  *   text, drawing and images.
- *   Available at https://github.com/jung-kurt/gofpdf
+ *   Available at https://github.com/jung-kurt/gofpdf/v2
  */
 
 package mdtopdf
@@ -24,7 +24,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jung-kurt/gofpdf"
+	"github.com/jung-kurt/gofpdf/v2"
 	bf "github.com/russross/blackfriday/v2"
 )
 

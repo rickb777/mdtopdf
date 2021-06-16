@@ -3,7 +3,7 @@
 [Unordered List (entering)] {16 false 0 0 [] false}
 [... List Left Margin] set to 58.338
 -[Unordered Item (entering) #1] {24 false 43 46 [] false}
--[cr()] LH=14
+-[cr()] LH=16
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -12,7 +12,7 @@
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[Unordered Item (leaving)] {24 false 43 46 [] false}
 -[Unordered Item (entering) #2] {40 false 43 46 [] false}
--[cr()] LH=14
+-[cr()] LH=16
 --[Paragraph (entering)] 
 --[... Margins (left, top, right, bottom:] 98.322 28.35 28.35 56.7
 --[First Para within a list] breaking
@@ -22,33 +22,40 @@
 --[Unordered Item (leaving)] {40 false 43 46 [] false}
 -[Unordered List (leaving)] {16 false 0 0 [] false}
 -[... Reset List Left Margin] re-set to 28.35
-[cr()] LH=14
+[cr()] LH=16
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Text] Code:
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Codeblock] {false [] 0 0 0}
-[cr()] LH=14
+[cr()] LH=16
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Text] And:
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Codeblock] {false [] 0 0 0}
-[cr()] LH=14
+[cr()] LH=16
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Text] And:
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Codeblock] {false [] 0 0 0}
-[cr()] LH=14
+[cr()] LH=16
+[Paragraph (entering)] 
+[... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
+[cr()] LH=16
+[Text] Known issue: incorrect indentation
+[Paragraph (leaving)] 
+[... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
+[cr()] LH=16
 [Document] Not Handled
 [RenderFooter] Not handled

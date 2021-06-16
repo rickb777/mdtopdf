@@ -1,28 +1,28 @@
 [RenderHeader] Not handled
 [Document] Not Handled
-[cr()] LH=14
+[cr()] LH=16
 [Heading (1, entering)] {1  false}
 -[Text] Table Tests
 -[Heading (leaving)] 
 -[cr()] LH=29
 [Paragraph (entering)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Text] This is a simple table:
 [Paragraph (leaving)] 
 [... Margins (left, top, right, bottom:] 28.35 28.35 28.35 56.7
-[cr()] LH=14
+[cr()] LH=16
 [Table (entering)] 
-[cr()] LH=14
+[cr()] LH=16
 -[TableHead (entering)] 
 --[TableRow (entering)] 
 ---[TableCell (entering)] 
 ----[Text] Header
-----[... table header cell] Width=60.672, height=14
+----[... table header cell] Width=60.672, height=16
 ---[TableCell (leaving)] 
 ---[TableCell (entering)] 
 ----[Text] Another header
-----[... table header cell] Width=108.67200000000001, height=14
+----[... table header cell] Width=108.67200000000001, height=16
 ---[TableCell (leaving)] 
 --[TableRow (leaving)] 
 -[TableHead (leaving)] 
@@ -30,25 +30,25 @@
 --[TableRow (entering)] 
 ---[TableCell (entering)] 
 ----[Text] field 1
-----[... table body cell] Width=60.672, height=14
+----[... table body cell] Width=60.672, height=16
 ---[TableCell (leaving)] 
 ---[TableCell (entering)] 
 ----[Text] something
-----[... table body cell] Width=108.67200000000001, height=14
+----[... table body cell] Width=108.67200000000001, height=16
 ---[TableCell (leaving)] 
 --[TableRow (leaving)] 
 --[TableRow (entering)] 
 ---[TableCell (entering)] 
 ----[Text] field 2
-----[... table body cell] Width=60.672, height=14
+----[... table body cell] Width=60.672, height=16
 ---[TableCell (leaving)] 
 ---[TableCell (entering)] 
 ----[Text] something else
-----[... table body cell] Width=108.67200000000001, height=14
+----[... table body cell] Width=108.67200000000001, height=16
 ---[TableCell (leaving)] 
 --[TableRow (leaving)] 
 -[TableBody (leaving)] 
 [Table (leaving)] 
-[cr()] LH=14
+[cr()] LH=16
 [Document] Not Handled
 [RenderFooter] Not handled

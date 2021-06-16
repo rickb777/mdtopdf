@@ -1,0 +1,41 @@
+<h3 id="img">Images</h3>
+
+<p>Admittedly, it&rsquo;s fairly difficult to devise a &ldquo;natural&rdquo; syntax for
+placing images into a plain text document format.</p>
+
+<p>Markdown uses an image syntax that is intended to resemble the syntax
+for links, allowing for two styles: <em>inline</em> and <em>reference</em>.</p>
+
+<p>Inline image syntax looks like this:</p>
+
+<pre><code>![Alt text](./image/fpdf.png)
+
+![Alt text](./image/hiking.png &quot;Optional title&quot;)
+</code></pre>
+
+<p>That is:</p>
+
+<ul>
+<li>An exclamation mark: <code>!</code>;</li>
+<li>followed by a set of square brackets, containing the <code>alt</code>
+attribute text for the image;</li>
+<li>followed by a set of parentheses, containing the URL or path to
+the image, and an optional <code>title</code> attribute enclosed in double
+or single quotes.</li>
+</ul>
+
+<p>Here is the first picture: <img src="./image/fpdf.png" alt="from https://github.com/jung-kurt/gofpdf/tree/master/image" /></p>
+
+<p>Here is the second picture:
+<img src="./image/hiking.png" alt="from https://github.com/egonelbre/gophers" title="Optional title" /></p>
+
+<p>The Go gopher was designed by Renee French. The Gopher character design is licensed under the Creative Commons 3.0 Attributions license. Read <a href="http://blog.golang.org/gopher">http://blog.golang.org/gopher</a> for more details.</p>
+
+<p>Note: this snippet was adapted from the testdata folder file named:
+<code>Markdown Documentation - Syntax.text</code></p>
+
+<p>Here is a non-existent image&hellip; should generate a message in trace file.
+<img src="./image/xbay.jpg" alt="Not from https://jpeg.org/images/jpeg-home.jpg" title="Does not exist!" /></p>
+
+<p>Here is a JPEG image&hellip; is it auto-detected?
+<img src="./image/bay.jpg" alt="from https://jpeg.org/images/jpeg-home.jpg" title="Down by the Bay" /></p>

@@ -20,11 +20,14 @@
 package mdtopdf
 
 import (
+	bf "github.com/russross/blackfriday/v2"
 	"io/ioutil"
 	"path"
 	"strings"
 	"testing"
 )
+
+// compare the results visually against (e.g.) https://md2pdf.netlify.app/
 
 func testit(inputf string, t *testing.T) {
 	inputDir := "./testdata/"
@@ -32,18 +35,24 @@ func testit(inputf string, t *testing.T) {
 
 	base := strings.TrimSuffix(path.Base(input), ".md")
 	pdfFile := path.Join(inputDir, base) + ".pdf"
+	htmlFile := path.Join(inputDir, base) + ".html"
 
-	content, err := ioutil.ReadFile(input)
+	markdown, err := ioutil.ReadFile(input)
 	if err != nil {
-		t.Errorf("%v:%v", input, err)
+		t.Fatalf("%v:%v", input, err)
+	}
+
+	err = ioutil.WriteFile(htmlFile, bf.Run(markdown), 0644)
+	if err != nil {
+		t.Fatalf("%v:%v", htmlFile, err)
 	}
 
 	r := NewPdfRenderer("portrait", "letter", ".")
 	r.TracerFile = path.Join(inputDir, base) + ".log"
 
-	err = r.Process(content).ToFile(pdfFile)
+	err = r.Process(markdown).ToFile(pdfFile)
 	if err != nil {
-		t.Error(err)
+		t.Fatalf("%v:%v", pdfFile, err)
 	}
 }
 
@@ -101,10 +110,6 @@ func TestCodeBlocks(t *testing.T) {
 
 func TestCodeSpans(t *testing.T) {
 	testit("Code Spans.md", t)
-}
-
-func TestHardWrappedPara(t *testing.T) {
-	testit("Hard-wrapped paragraphs with list-like lines no empty line before block.md", t)
 }
 
 func TestHardWrappedPara2(t *testing.T) {

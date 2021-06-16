@@ -13,3 +13,5 @@ Regular text.
 Regular Text.
 
 	code block on the last line
+
+Known issue: the code blocks should have padding

@@ -31,8 +31,8 @@ import (
 	bf "github.com/russross/blackfriday/v2"
 )
 
-// Color is a RGB set of ints; for a nice picker
-// see https://www.w3schools.com/colors/colors_picker.asp
+// Color is expressed in RGB components (0 - 255).
+// For a nice picker, see https://www.w3schools.com/colors/colors_picker.asp
 type Color struct {
 	Red, Green, Blue int
 }
@@ -55,7 +55,7 @@ type Styler struct {
 type PdfRenderer struct {
 	// Pdf can be used to access the underlying created gofpdf object
 	// prior to processing the markdown source
-	Pdf                *gofpdf.Fpdf
+	Pdf *gofpdf.Fpdf
 
 	// trace/log file - used if not blank
 	TracerFile  string
@@ -106,43 +106,43 @@ func NewPdfRenderer(orientation, paperSize, fontDir string) *PdfRenderer {
 	r := new(PdfRenderer)
 
 	// Normal Text
-	r.Normal = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 2,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+	r.Normal = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 4,
+		TextColor: Black, FillColor: White}
 
 	// Link text
-	r.Link = Styler{Font: "Arial", Style: "iu", Size: 12, Spacing: 2,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+	r.Link = Styler{Font: "Arial", Style: "u", Size: 12, Spacing: 4,
+		TextColor: ColorOf("#0366d6"), FillColor: White}
 
 	// Backticked text
-	r.Backtick = Styler{Font: "Courier", Style: "", Size: 12, Spacing: 2,
-		TextColor: Color{37, 27, 14}, FillColor: Color{200, 200, 200}}
+	r.Backtick = Styler{Font: "Courier", Style: "", Size: 12, Spacing: 4,
+		TextColor: Color{37, 27, 14}, FillColor: Grey(200)}
 
 	// Headings
 	r.H1 = Styler{Font: "Arial", Style: "b", Size: 24, Spacing: 5,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+		TextColor: Black, FillColor: White}
 	r.H2 = Styler{Font: "Arial", Style: "b", Size: 22, Spacing: 5,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+		TextColor: Black, FillColor: White}
 	r.H3 = Styler{Font: "Arial", Style: "b", Size: 20, Spacing: 5,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+		TextColor: Black, FillColor: White}
 	r.H4 = Styler{Font: "Arial", Style: "b", Size: 18, Spacing: 5,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+		TextColor: Black, FillColor: White}
 	r.H5 = Styler{Font: "Arial", Style: "b", Size: 16, Spacing: 5,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+		TextColor: Black, FillColor: White}
 	r.H6 = Styler{Font: "Arial", Style: "b", Size: 14, Spacing: 5,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+		TextColor: Black, FillColor: White}
 
 	//r.inBlockquote = false
 	//r.inHeading = false
-	r.Blockquote = Styler{Font: "Arial", Style: "i", Size: 12, Spacing: 2,
-		TextColor: Color{0, 0, 0}, FillColor: Color{255, 255, 255}}
+	r.Blockquote = Styler{Font: "Arial", Style: "i", Size: 12, Spacing: 4,
+		TextColor: Black, FillColor: White}
 
 	// Table Header Text
-	r.THeader = Styler{Font: "Arial", Style: "B", Size: 12, Spacing: 2,
-		TextColor: Color{0, 0, 0}, FillColor: Color{180, 180, 180}}
+	r.THeader = Styler{Font: "Arial", Style: "B", Size: 12, Spacing: 4,
+		TextColor: Black, FillColor: Grey(180)}
 
 	// Table Body Text
-	r.TBody = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 2,
-		TextColor: Color{0, 0, 0}, FillColor: Color{240, 240, 240}}
+	r.TBody = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 4,
+		TextColor: Black, FillColor: Grey(240)}
 
 	r.Pdf = gofpdf.New(orientation, "pt", paperSize, fontDir)
 	r.Pdf.AddPage()
@@ -161,11 +161,14 @@ func NewPdfRenderer(orientation, paperSize, fontDir string) *PdfRenderer {
 	return r
 }
 
+// Process sets the markdown source and must be called prior to
+// ToFile or Output.
 func (r *PdfRenderer) Process(markdown []byte) *PdfRenderer {
 	r.markdown = convertCRNL(markdown)
 	return r
 }
 
+// ToFile renders to a PDF file.
 func (r *PdfRenderer) ToFile(pdfFile string) error {
 	// try to open tracer
 	if r.TracerFile != "" {
@@ -187,6 +190,7 @@ func (r *PdfRenderer) ToFile(pdfFile string) error {
 	return nil
 }
 
+// Output renders PDF content to a writer.
 func (r *PdfRenderer) Output(w io.Writer) error {
 	// try to open tracer
 	if r.TracerFile != "" {

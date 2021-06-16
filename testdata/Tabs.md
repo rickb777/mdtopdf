@@ -19,3 +19,5 @@ And:
 	
 	+   this is an example list item
 	    indented with spaces
+
+Known issue: incorrect indentation

@@ -6,3 +6,5 @@ list item.
 
 Here's one with a bullet.
 * criminey.
+
+Known issue: layout is different to other renderers

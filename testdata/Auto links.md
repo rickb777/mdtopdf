@@ -11,3 +11,5 @@ With an ampersand: <http://example.com/?foo=1&bar=2>
 Auto-links should not occur here: `<http://example.com/>`
 
 	or here: <http://example.com/>
+
+Known issue: missing left hand vertical bar decoration

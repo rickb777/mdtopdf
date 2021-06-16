@@ -1,6 +1,6 @@
 /*
  * Markdown to PDF Converter
- * Available at http://github.com/mandolyte/mdtopdf
+ * Available at http://github.com/rickb777/mdtopdf
  *
  * Copyright © 2018 Cecil New <cecil.new@gmail.com>.
  * Distributed under the MIT License.

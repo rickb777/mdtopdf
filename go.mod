@@ -1,6 +1,6 @@
-module github.com/mandolyte/mdtopdf
+module github.com/rickb777/mdtopdf
 
-go 1.15
+go 1.16
 
 require (
 	github.com/jung-kurt/gofpdf/v2 v2.17.2 // indirect

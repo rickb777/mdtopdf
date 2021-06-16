@@ -1,6 +1,6 @@
 # mdtopdf
 
-[![GoDoc](https://godoc.org/github.com/mandolyte/mdtopdf?status.svg)](https://godoc.org/github.com/mandolyte/mdtopdf)
+[![GoDoc](https://godoc.org/github.com/rickb777/mdtopdf?status.svg)](https://godoc.org/github.com/rickb777/mdtopdf)
 
 ## Introduction: Markdown to PDF
 
@@ -46,7 +46,7 @@ How to use of non-Latin fonts/languages is documented in a section below.
 3. The markdown link title, which would show when converted to HTML as hover-over text, is not supported. The generated PDF will show the actual URL that will be used if clicked, but this is a function of the PDF viewer.
 
 4. Currently all levels of unordered lists use a dash for the bullet. 
-This is a planned fix; [see here](https://github.com/mandolyte/mdtopdf/issues/1).
+This is a planned fix; [see here](https://github.com/rickb777/mdtopdf/issues/1).
 
 5. Definition lists are not supported (not sure that markdown supports them -- I need to research this)
 
@@ -60,7 +60,7 @@ This is a planned fix; [see here](https://github.com/mandolyte/mdtopdf/issues/1)
 
 To install the package, run the usual `go get`:
 ```
-go get github.com/mandolyte/mdtopdf
+go get github.com/rickb777/mdtopdf
 ```
 
 ## Quick start
@@ -79,7 +79,7 @@ In order to use a non-Latin language there are a number things that must be done
 - a codepage map
 - the content must be translated to Unicode
 
-The above are all requirements of the PDF generator (see dependencies above). I don't know of a straightforward way to determine what the PDF generator needs. I was able to play with a little code to discover what is needed. In addition, the PDF generator testing code has some hints. My code to play with the PDF generator is at `mandolyte/samples/gofpdf`.
+The above are all requirements of the PDF generator (see dependencies above). I don't know of a straightforward way to determine what the PDF generator needs. I was able to play with a little code to discover what is needed. In addition, the PDF generator testing code has some hints. My code to play with the PDF generator is at `rickb777/samples/gofpdf`.
 
 In addition, this package's `Styler` must be used to set the font to match that is configured with the PDF generator.
 

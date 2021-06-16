@@ -23,7 +23,7 @@ Installation
 
 To install the package:
 
-	go get github.com/mandolyte/mdtopdf
+	go get github.com/rickb777/mdtopdf
 
 
 Quick start

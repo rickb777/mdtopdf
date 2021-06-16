@@ -20,7 +20,6 @@
 package mdtopdf
 
 import (
-	"github.com/jung-kurt/gofpdf/v2"
 	"io/ioutil"
 	"path"
 	"strings"
@@ -28,121 +27,122 @@ import (
 )
 
 func testit(inputf string, t *testing.T) {
-	inputd := "./testdata/"
-	input := path.Join(inputd, inputf)
+	inputDir := "./testdata/"
+	input := path.Join(inputDir, inputf)
 
-	pdffile := path.Join(inputd, strings.TrimSuffix(path.Base(input), ".text")) + ".pdf"
+	base := strings.TrimSuffix(path.Base(input), ".md")
+	pdfFile := path.Join(inputDir, base) + ".pdf"
 
 	content, err := ioutil.ReadFile(input)
 	if err != nil {
 		t.Errorf("%v:%v", input, err)
 	}
 
-	r := NewPdfRenderer(gofpdf.New("portrait", "pt", "letter", "."))
-	r.TracerFile = path.Join(inputd, strings.TrimSuffix(path.Base(input), ".text")) + ".log"
+	r := NewPdfRenderer("portrait", "letter", ".")
+	r.TracerFile = path.Join(inputDir, base) + ".log"
 
-	err = r.Process(pdffile, content)
+	err = r.Process(content).ToFile(pdfFile)
 	if err != nil {
 		t.Error(err)
 	}
 }
 
 func TestTables(t *testing.T) {
-	testit("Tables.text", t)
+	testit("Tables.md", t)
 }
 
 func TestMarkdownDocumenationBasic(t *testing.T) {
-	testit("Markdown Documentation - Basics.text", t)
+	testit("Markdown Documentation - Basics.md", t)
 }
 
 func TestMarkdownDocumenationSyntax(t *testing.T) {
-	testit("Markdown Documentation - Syntax.text", t)
+	testit("Markdown Documentation - Syntax.md", t)
 }
 
 func TestImage(t *testing.T) {
-	testit("Image.text", t)
+	testit("Image.md", t)
 }
 
 func TestAutoLinks(t *testing.T) {
-	testit("Auto links.text", t)
+	testit("Auto links.md", t)
 }
 
 func TestAmpersandEncoding(t *testing.T) {
-	testit("Amps and angle encoding.text", t)
+	testit("Amps and angle encoding.md", t)
 }
 
 func TestInlineLinks(t *testing.T) {
-	testit("Links, inline style.text", t)
+	testit("Links, inline style.md", t)
 }
 
 func TestLists(t *testing.T) {
-	testit("Ordered and unordered lists.text", t)
+	testit("Ordered and unordered lists.md", t)
 }
 
 func TestStringEmph(t *testing.T) {
-	testit("Strong and em together.text", t)
+	testit("Strong and em together.md", t)
 }
 
 func TestTabs(t *testing.T) {
-	testit("Tabs.text", t)
+	testit("Tabs.md", t)
 }
 
 func TestBackslashEscapes(t *testing.T) {
-	testit("Backslash escapes.text", t)
+	testit("Backslash escapes.md", t)
 }
 
 func TestBackquotes(t *testing.T) {
-	testit("Blockquotes with code blocks.text", t)
+	testit("Blockquotes with code blocks.md", t)
 }
 
 func TestCodeBlocks(t *testing.T) {
-	testit("Code Blocks.text", t)
+	testit("Code Blocks.md", t)
 }
 
 func TestCodeSpans(t *testing.T) {
-	testit("Code Spans.text", t)
+	testit("Code Spans.md", t)
 }
 
 func TestHardWrappedPara(t *testing.T) {
-	testit("Hard-wrapped paragraphs with list-like lines no empty line before block.text", t)
+	testit("Hard-wrapped paragraphs with list-like lines no empty line before block.md", t)
 }
 
 func TestHardWrappedPara2(t *testing.T) {
-	testit("Hard-wrapped paragraphs with list-like lines.text", t)
+	testit("Hard-wrapped paragraphs with list-like lines.md", t)
 }
 
 func TestHorizontalRules(t *testing.T) {
-	testit("Horizontal rules.text", t)
+	testit("Horizontal rules.md", t)
 }
 
 func TestInlineHtmlSimple(t *testing.T) {
-	testit("Inline HTML (Simple).text", t)
+	testit("Inline HTML (Simple).md", t)
 }
 
 func TestInlineHtmlAdvanced(t *testing.T) {
-	testit("Inline HTML (Advanced).text", t)
+	testit("Inline HTML (Advanced).md", t)
 }
 
 func TestInlineHtmlComments(t *testing.T) {
-	testit("Inline HTML comments.text", t)
+	testit("Inline HTML comments.md", t)
 }
 
 func TestTitleWithQuotes(t *testing.T) {
-	testit("Literal quotes in titles.text", t)
+	testit("Literal quotes in titles.md", t)
 }
 
 func TestNestedBlockquotes(t *testing.T) {
-	testit("Nested blockquotes.text", t)
+	testit("Nested blockquotes.md", t)
 }
 
 func TestLinksReference(t *testing.T) {
-	testit("Links, reference style.text", t)
+	testit("Links, reference style.md", t)
 }
 
 func TestLinksShortcut(t *testing.T) {
-	testit("Links, shortcut references.text", t)
+	testit("Links, shortcut references.md", t)
 }
 
 func TestTidyness(t *testing.T) {
-	testit("Tidyness.text", t)
+	testit("Tidyness.md", t)
 }

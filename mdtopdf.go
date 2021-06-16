@@ -55,7 +55,7 @@ type Styler struct {
 type PdfRenderer struct {
 	// Pdf can be used to access the underlying created gofpdf object
 	// prior to processing the markdown source
-	Pdf *gofpdf.Fpdf
+	Pdf                *gofpdf.Fpdf
 
 	// trace/log file - used if not blank
 	TracerFile  string
@@ -90,17 +90,18 @@ type PdfRenderer struct {
 	THeader Styler
 	TBody   Styler
 
-	cs states
+	cs       states
+	markdown []byte // the source content
 }
 
 // NewPdfRenderer creates and configures an PdfRenderer object,
-// which satisfies the Renderer interface.
+// which satisfies the BlackFriday Renderer interface.
 //
-// Typical settings for the pdf object might be
+// Any the parameters may be blank, with the defaults being
+// "portrait", "A4", "."
 //
-//    gofpdf.New("portrait", "pt", "letter", ".")
-//
-func NewPdfRenderer(pdf *gofpdf.Fpdf) *PdfRenderer {
+// It is not safe to use instances in more than one goroutine.
+func NewPdfRenderer(orientation, paperSize, fontDir string) *PdfRenderer {
 
 	r := new(PdfRenderer)
 
@@ -143,7 +144,7 @@ func NewPdfRenderer(pdf *gofpdf.Fpdf) *PdfRenderer {
 	r.TBody = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 2,
 		TextColor: Color{0, 0, 0}, FillColor: Color{240, 240, 240}}
 
-	r.Pdf = pdf
+	r.Pdf = gofpdf.New(orientation, "pt", paperSize, fontDir)
 	r.Pdf.AddPage()
 	// set default font
 	r.setStyler(r.Normal)
@@ -160,46 +161,49 @@ func NewPdfRenderer(pdf *gofpdf.Fpdf) *PdfRenderer {
 	return r
 }
 
-func (r *PdfRenderer) Process(pdfFile string, content []byte) error {
+func (r *PdfRenderer) Process(markdown []byte) *PdfRenderer {
+	r.markdown = convertCRNL(markdown)
+	return r
+}
 
+func (r *PdfRenderer) ToFile(pdfFile string) error {
 	// try to open tracer
 	if r.TracerFile != "" {
 		f, err := os.Create(r.TracerFile)
 		if err != nil {
-			return fmt.Errorf("os.Create() on tracefile error: %w", err)
+			return fmt.Errorf("os.Create() on tracefile: %w", err)
 		}
 		defer f.Close()
 		r.traceWriter = bufio.NewWriter(f)
 		defer r.traceWriter.Flush()
 	}
 
-	_ = bf.Run(convertCRNL(content), bf.WithRenderer(r))
+	_ = bf.Run(r.markdown, bf.WithRenderer(r))
 
 	err := r.Pdf.OutputFileAndClose(pdfFile)
 	if err != nil {
-		return fmt.Errorf("Pdf.OutputFileAndClose() error on %v: %w", pdfFile, err)
+		return fmt.Errorf("fpdf.ToFile() error on %v: %w", pdfFile, err)
 	}
 	return nil
 }
 
-func (r *PdfRenderer) WriteTo(w io.Writer, content []byte) error {
-
+func (r *PdfRenderer) Output(w io.Writer) error {
 	// try to open tracer
 	if r.TracerFile != "" {
 		f, err := os.Create(r.TracerFile)
 		if err != nil {
-			return fmt.Errorf("os.Create() on tracefile error: %w", err)
+			return fmt.Errorf("os.Create() on tracefile: %w", err)
 		}
 		defer f.Close()
 		r.traceWriter = bufio.NewWriter(f)
 		defer r.traceWriter.Flush()
 	}
 
-	_ = bf.Run(convertCRNL(content), bf.WithRenderer(r))
+	_ = bf.Run(r.markdown, bf.WithRenderer(r))
 
 	err := r.Pdf.Output(w)
 	if err != nil {
-		return fmt.Errorf("Pdf.Output() error: %w", err)
+		return fmt.Errorf("fpdf.Output(): %w", err)
 	}
 	return nil
 }

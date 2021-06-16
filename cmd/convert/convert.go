@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/jung-kurt/gofpdf/v2"
 	"io/ioutil"
 	"log"
 	"os"
@@ -42,7 +41,7 @@ func main() {
 		}
 	}
 
-	pf := mdtopdf.NewPdfRenderer(gofpdf.New("", "", "", "."))
+	pf := mdtopdf.NewPdfRenderer("portrait", "letter", ".")
 	pf.TracerFile = "trace.log"
 	pf.Pdf.SetSubject("How to convert markdown to PDF", true)
 	pf.Pdf.SetTitle("Example PDF converted from Markdown", true)
@@ -53,7 +52,7 @@ func main() {
 		TextColor: mdtopdf.Color{Red: 0, Green: 0, Blue: 0},
 		FillColor: mdtopdf.Color{Red: 255, Green: 102, Blue: 129}}
 
-	err = pf.Process(*output, content)
+	err = pf.Process(content).ToFile(*output)
 	if err != nil {
 		log.Fatalf("pdf.OutputFileAndClose() error:%v", err)
 	}

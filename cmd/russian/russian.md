@@ -6,13 +6,6 @@ Here are lines of Russian:
 
 This is a paragraph with some *emphasized text* - OK?
 
-¡¢£¤¥
-
-`¬| 1!¹¡ 2"²⅛ 3£³£ 4$€¼ 5%½⅜ 6^¾⅝ 7&{⅞ 8*™ 9(]± 0)}° -_\¿ =+
-qQ@Ω wWłŁ eEeE rR¶® tTŧŦ yY←¥ uU↓↑ iI→ı oOøØ pPþÞ
-aAæÆ sSß§ dDðÐ fFđª gGŋŊ hHħĦ jJ kKĸ& lLłŁ ;: '@
-zZ«< xX»> cC¢© vV“‘ bB”’ nNnN mMµº ,<─× .>·÷ /?
-
 Here is an unordered list:
 
 - this is an unordered list

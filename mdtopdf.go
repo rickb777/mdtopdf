@@ -55,13 +55,11 @@ type Styler struct {
 type PdfRenderer struct {
 	// Pdf can be used to access the underlying created gofpdf object
 	// prior to processing the markdown source
-	Pdf                *gofpdf.Fpdf
-	orientation, units string
-	papersize, fontdir string
+	Pdf *gofpdf.Fpdf
 
-	// trace/log file if present
-	pdfFile, tracerFile string
-	w                   *bufio.Writer
+	// trace/log file - used if not blank
+	TracerFile  string
+	traceWriter *bufio.Writer
 
 	// default margins for safe keeping
 	mleft, mtop, mright, mbottom float64
@@ -97,26 +95,14 @@ type PdfRenderer struct {
 
 // NewPdfRenderer creates and configures an PdfRenderer object,
 // which satisfies the Renderer interface.
-func NewPdfRenderer(orient, papersz, pdfFile, tracerFile string) *PdfRenderer {
+//
+// Typical settings for the pdf object might be
+//
+//    gofpdf.New("portrait", "pt", "letter", ".")
+//
+func NewPdfRenderer(pdf *gofpdf.Fpdf) *PdfRenderer {
 
 	r := new(PdfRenderer)
-
-	// set filenames
-	r.pdfFile = pdfFile
-	r.tracerFile = tracerFile
-
-	// Global things
-	r.orientation = "portrait"
-	if orient != "" {
-		r.orientation = orient
-	}
-	r.units = "pt"
-	r.papersize = "Letter"
-	if papersz != "" {
-		r.papersize = papersz
-	}
-
-	r.fontdir = "."
 
 	// Normal Text
 	r.Normal = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 2,
@@ -157,7 +143,7 @@ func NewPdfRenderer(orient, papersz, pdfFile, tracerFile string) *PdfRenderer {
 	r.TBody = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 2,
 		TextColor: Color{0, 0, 0}, FillColor: Color{240, 240, 240}}
 
-	r.Pdf = gofpdf.New(r.orientation, r.units, r.papersize, r.fontdir)
+	r.Pdf = pdf
 	r.Pdf.AddPage()
 	// set default font
 	r.setStyler(r.Normal)
@@ -174,39 +160,39 @@ func NewPdfRenderer(orient, papersz, pdfFile, tracerFile string) *PdfRenderer {
 	return r
 }
 
-func (r *PdfRenderer) Process(content []byte) error {
+func (r *PdfRenderer) Process(pdfFile string, content []byte) error {
 
 	// try to open tracer
-	if r.tracerFile != "" {
-		f, err := os.Create(r.tracerFile)
+	if r.TracerFile != "" {
+		f, err := os.Create(r.TracerFile)
 		if err != nil {
 			return fmt.Errorf("os.Create() on tracefile error: %w", err)
 		}
 		defer f.Close()
-		r.w = bufio.NewWriter(f)
-		defer r.w.Flush()
+		r.traceWriter = bufio.NewWriter(f)
+		defer r.traceWriter.Flush()
 	}
 
 	_ = bf.Run(convertCRNL(content), bf.WithRenderer(r))
 
-	err := r.Pdf.OutputFileAndClose(r.pdfFile)
+	err := r.Pdf.OutputFileAndClose(pdfFile)
 	if err != nil {
-		return fmt.Errorf("Pdf.OutputFileAndClose() error on %v: %w", r.pdfFile, err)
+		return fmt.Errorf("Pdf.OutputFileAndClose() error on %v: %w", pdfFile, err)
 	}
 	return nil
 }
 
-func (r *PdfRenderer) ProcessTo(w io.Writer, content []byte) error {
+func (r *PdfRenderer) WriteTo(w io.Writer, content []byte) error {
 
 	// try to open tracer
-	if r.tracerFile != "" {
-		f, err := os.Create(r.tracerFile)
+	if r.TracerFile != "" {
+		f, err := os.Create(r.TracerFile)
 		if err != nil {
 			return fmt.Errorf("os.Create() on tracefile error: %w", err)
 		}
 		defer f.Close()
-		r.w = bufio.NewWriter(f)
-		defer r.w.Flush()
+		r.traceWriter = bufio.NewWriter(f)
+		defer r.traceWriter.Flush()
 	}
 
 	_ = bf.Run(convertCRNL(content), bf.WithRenderer(r))
@@ -348,8 +334,8 @@ func (r *PdfRenderer) cr() {
 
 // Tracer traces parse and pdf generation activity.
 func (r *PdfRenderer) tracer(source, msg string) {
-	if r.tracerFile != "" {
+	if r.TracerFile != "" {
 		indent := strings.Repeat("-", len(r.cs.stack)-1)
-		r.w.WriteString(fmt.Sprintf("%v[%v] %v\n", indent, source, msg))
+		r.traceWriter.WriteString(fmt.Sprintf("%v[%v] %v\n", indent, source, msg))
 	}
 }

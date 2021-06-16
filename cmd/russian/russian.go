@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/jung-kurt/gofpdf/v2"
 	"io/ioutil"
 	"log"
 	"os"
@@ -41,7 +42,8 @@ func main() {
 		}
 	}
 
-	pf := mdtopdf.NewPdfRenderer("", "", *output, "trace.log")
+	pf := mdtopdf.NewPdfRenderer(gofpdf.New("", "", "", "."))
+	pf.TracerFile = "trace.log"
 	pf.Pdf.AddFont("Helvetica-1251", "", "helvetica_1251.json")
 	pf.Pdf.SetFont("Helvetica-1251", "", 12)
 	// get the unicode translator
@@ -51,7 +53,7 @@ func main() {
 		TextColor: mdtopdf.Color{0, 0, 0},
 		FillColor: mdtopdf.Color{255, 255, 255}}
 
-	err = pf.Process([]byte(tr(string(content))))
+	err = pf.Process(*output, []byte(tr(string(content))))
 	if err != nil {
 		log.Fatalf("pdf.OutputFileAndClose() error:%v", err)
 	}

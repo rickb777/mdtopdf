@@ -20,6 +20,7 @@
 package mdtopdf
 
 import (
+	"github.com/jung-kurt/gofpdf/v2"
 	"io/ioutil"
 	"path"
 	"strings"
@@ -30,19 +31,17 @@ func testit(inputf string, t *testing.T) {
 	inputd := "./testdata/"
 	input := path.Join(inputd, inputf)
 
-	tracerfile := path.Join(inputd, strings.TrimSuffix(path.Base(input), ".text"))
-	tracerfile += ".log"
-
-	pdffile := path.Join(inputd, strings.TrimSuffix(path.Base(input), ".text"))
-	pdffile += ".pdf"
+	pdffile := path.Join(inputd, strings.TrimSuffix(path.Base(input), ".text")) + ".pdf"
 
 	content, err := ioutil.ReadFile(input)
 	if err != nil {
 		t.Errorf("%v:%v", input, err)
 	}
 
-	r := NewPdfRenderer("", "", pdffile, tracerfile)
-	err = r.Process(content)
+	r := NewPdfRenderer(gofpdf.New("portrait", "pt", "letter", "."))
+	r.TracerFile = path.Join(inputd, strings.TrimSuffix(path.Base(input), ".text")) + ".log"
+
+	err = r.Process(pdffile, content)
 	if err != nil {
 		t.Error(err)
 	}

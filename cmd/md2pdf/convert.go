@@ -59,10 +59,6 @@ func main() {
 	}
 }
 
-func identity(msg string) string {
-	return msg
-}
-
 func usage(msg string) {
 	fmt.Println(msg + "\n")
 	fmt.Print("Usage: convert [options]\n")

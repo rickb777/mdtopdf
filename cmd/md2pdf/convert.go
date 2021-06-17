@@ -41,21 +41,26 @@ func main() {
 		}
 	}
 
-	pf := mdtopdf.NewPdfRenderer("portrait", "letter", ".")
+	pf := mdtopdf.NewPdfRenderer("", "", fontDir)
 	pf.TracerFile = "trace.log"
+
+	if fileExists(fontDir + "/" + fontFile) {
+		pf.Pdf.AddUTF8Font(fontName, "", fontFile)
+		pf.Pdf.SetFont(fontName, "", 12)
+		pf.Normal = mdtopdf.Styler{Font: fontName, Style: "", Size: 12, Spacing: 4, TextColor: mdtopdf.Black, FillColor: mdtopdf.White}
+	}
+
 	pf.Pdf.SetSubject("How to convert markdown to PDF", true)
 	pf.Pdf.SetTitle("Example PDF converted from Markdown", true)
-	pf.THeader = mdtopdf.Styler{Font: "Times", Style: "IUB", Size: 20, Spacing: 2,
-		TextColor: mdtopdf.Black,
-		FillColor: mdtopdf.Color{Red: 179, Green: 179, Blue: 255}}
-	pf.TBody = mdtopdf.Styler{Font: "Arial", Style: "", Size: 12, Spacing: 2,
-		TextColor: mdtopdf.Black,
-		FillColor: mdtopdf.Color{Red: 255, Green: 102, Blue: 129}}
 
 	err = pf.Process(content).ToFile(*output)
 	if err != nil {
-		log.Fatalf("pdf.OutputFileAndClose() error:%v", err)
+		log.Fatalf("pdf.ToFile() error:%v", err)
 	}
+}
+
+func identity(msg string) string {
+	return msg
 }
 
 func usage(msg string) {
@@ -64,3 +69,21 @@ func usage(msg string) {
 	flag.PrintDefaults()
 	os.Exit(0)
 }
+
+func fileExists(path string) bool {
+	fi, err := os.Stat(path)
+	if err != nil {
+		return false
+	}
+	return !fi.IsDir()
+}
+
+const (
+	//fontDir  = "."
+	//fontName = "LiberationSerif-Regular"
+	//fontFile = fontName + ".ttf"
+
+	fontDir  = "/usr/share/fonts"
+	fontName = "DejaVuSerif"
+	fontFile = "truetype/dejavu/" + fontName + ".ttf"
+)

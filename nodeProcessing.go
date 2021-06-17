@@ -24,7 +24,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jung-kurt/gofpdf/v2"
+	"github.com/phpdave11/gofpdf"
 	bf "github.com/russross/blackfriday/v2"
 )
 

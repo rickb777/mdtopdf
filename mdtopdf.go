@@ -27,8 +27,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jung-kurt/gofpdf/v2"
+	"github.com/phpdave11/gofpdf"
 	bf "github.com/russross/blackfriday/v2"
+)
+
+const (
+	monoFont  = "Courier"
+	sansFont  = "Helvetica"
+	serifFont = "Times"
 )
 
 // Color is expressed in RGB components (0 - 255).
@@ -106,43 +112,28 @@ func NewPdfRenderer(orientation, paperSize, fontDir string) *PdfRenderer {
 	r := new(PdfRenderer)
 
 	// Normal Text
-	r.Normal = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 4,
-		TextColor: Black, FillColor: White}
+	r.Normal = Styler{Font: sansFont, Style: "", Size: 12, Spacing: 4, TextColor: Black, FillColor: White}
 
 	// Link text
-	r.Link = Styler{Font: "Arial", Style: "u", Size: 12, Spacing: 4,
-		TextColor: ColorOf("#0366d6"), FillColor: White}
+	r.Link = Styler{Font: sansFont, Style: "u", Size: 12, Spacing: 4, TextColor: ColorOf("#0366d6"), FillColor: White}
 
-	// Backticked text
-	r.Backtick = Styler{Font: "Courier", Style: "", Size: 12, Spacing: 4,
-		TextColor: Color{37, 27, 14}, FillColor: Grey(200)}
+	// Backticked text ('code block')
+	r.Backtick = Styler{Font: "Courier", Style: "", Size: 12, Spacing: 4, TextColor: Color{37, 27, 14}, FillColor: Grey(230)}
 
 	// Headings
-	r.H1 = Styler{Font: "Arial", Style: "b", Size: 24, Spacing: 5,
-		TextColor: Black, FillColor: White}
-	r.H2 = Styler{Font: "Arial", Style: "b", Size: 22, Spacing: 5,
-		TextColor: Black, FillColor: White}
-	r.H3 = Styler{Font: "Arial", Style: "b", Size: 20, Spacing: 5,
-		TextColor: Black, FillColor: White}
-	r.H4 = Styler{Font: "Arial", Style: "b", Size: 18, Spacing: 5,
-		TextColor: Black, FillColor: White}
-	r.H5 = Styler{Font: "Arial", Style: "b", Size: 16, Spacing: 5,
-		TextColor: Black, FillColor: White}
-	r.H6 = Styler{Font: "Arial", Style: "b", Size: 14, Spacing: 5,
-		TextColor: Black, FillColor: White}
+	r.H1 = Styler{Font: sansFont, Style: "b", Size: 24, Spacing: 5, TextColor: Black, FillColor: White}
+	r.H2 = Styler{Font: sansFont, Style: "b", Size: 22, Spacing: 5, TextColor: Black, FillColor: White}
+	r.H3 = Styler{Font: sansFont, Style: "b", Size: 20, Spacing: 5, TextColor: Black, FillColor: White}
+	r.H4 = Styler{Font: sansFont, Style: "b", Size: 18, Spacing: 5, TextColor: Black, FillColor: White}
+	r.H5 = Styler{Font: sansFont, Style: "b", Size: 16, Spacing: 5, TextColor: Black, FillColor: White}
+	r.H6 = Styler{Font: sansFont, Style: "b", Size: 14, Spacing: 5, TextColor: Black, FillColor: White}
 
 	//r.inBlockquote = false
 	//r.inHeading = false
-	r.Blockquote = Styler{Font: "Arial", Style: "i", Size: 12, Spacing: 4,
-		TextColor: Black, FillColor: White}
+	r.Blockquote = Styler{Font: sansFont, Style: "i", Size: 12, Spacing: 4, TextColor: Black, FillColor: White}
 
-	// Table Header Text
-	r.THeader = Styler{Font: "Arial", Style: "B", Size: 12, Spacing: 4,
-		TextColor: Black, FillColor: Grey(180)}
-
-	// Table Body Text
-	r.TBody = Styler{Font: "Arial", Style: "", Size: 12, Spacing: 4,
-		TextColor: Black, FillColor: Grey(240)}
+	r.THeader = Styler{Font: sansFont, Style: "B", Size: 12, Spacing: 4, TextColor: Black, FillColor: Grey(180)}
+	r.TBody = Styler{Font: sansFont, Style: "", Size: 12, Spacing: 4, TextColor: Black, FillColor: Grey(240)}
 
 	r.Pdf = gofpdf.New(orientation, "pt", paperSize, fontDir)
 	r.Pdf.AddPage()

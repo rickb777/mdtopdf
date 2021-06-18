@@ -29,9 +29,9 @@ import (
 
 // compare the results visually against (e.g.) https://md2pdf.netlify.app/
 
-func testit(inputf string, t *testing.T) {
+func testit(name string, t *testing.T) {
 	inputDir := "./testdata/"
-	input := path.Join(inputDir, inputf)
+	input := path.Join(inputDir, name)
 
 	base := strings.TrimSuffix(path.Base(input), ".md")
 	pdfFile := path.Join(inputDir, base) + ".pdf"
@@ -47,7 +47,7 @@ func testit(inputf string, t *testing.T) {
 		t.Fatalf("%v:%v", htmlFile, err)
 	}
 
-	r := NewPdfRenderer("portrait", "letter", ".")
+	r := NewPdfRenderer("", "", "")
 	r.TracerFile = path.Join(inputDir, base) + ".log"
 
 	err = r.Process(markdown).ToFile(pdfFile)

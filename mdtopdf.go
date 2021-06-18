@@ -112,28 +112,28 @@ func NewPdfRenderer(orientation, paperSize, fontDir string) *PdfRenderer {
 	r := new(PdfRenderer)
 
 	// Normal Text
-	r.Normal = Styler{Font: sansFont, Style: "", Size: 12, Spacing: 4, TextColor: Black, FillColor: White}
+	r.Normal = Styler{Font: sansFont, Style: "", Size: 10, Spacing: 4, TextColor: Black, FillColor: White}
 
 	// Link text
-	r.Link = Styler{Font: sansFont, Style: "u", Size: 12, Spacing: 4, TextColor: ColorOf("#0366d6"), FillColor: White}
+	r.Link = Styler{Font: sansFont, Style: "u", Size: 10, Spacing: 4, TextColor: ColorOf("#0366d6"), FillColor: White}
 
 	// Backticked text ('code block')
-	r.Backtick = Styler{Font: "Courier", Style: "", Size: 12, Spacing: 4, TextColor: Color{37, 27, 14}, FillColor: Grey(230)}
+	r.Backtick = Styler{Font: "Courier", Style: "", Size: 10, Spacing: 4, TextColor: Color{37, 27, 14}, FillColor: Grey(230)}
 
 	// Headings
-	r.H1 = Styler{Font: sansFont, Style: "b", Size: 24, Spacing: 5, TextColor: Black, FillColor: White}
-	r.H2 = Styler{Font: sansFont, Style: "b", Size: 22, Spacing: 5, TextColor: Black, FillColor: White}
-	r.H3 = Styler{Font: sansFont, Style: "b", Size: 20, Spacing: 5, TextColor: Black, FillColor: White}
-	r.H4 = Styler{Font: sansFont, Style: "b", Size: 18, Spacing: 5, TextColor: Black, FillColor: White}
-	r.H5 = Styler{Font: sansFont, Style: "b", Size: 16, Spacing: 5, TextColor: Black, FillColor: White}
-	r.H6 = Styler{Font: sansFont, Style: "b", Size: 14, Spacing: 5, TextColor: Black, FillColor: White}
+	r.H1 = Styler{Font: sansFont, Style: "b", Size: 18, Spacing: 6, TextColor: Black, FillColor: White}
+	r.H2 = Styler{Font: sansFont, Style: "b", Size: 16, Spacing: 6, TextColor: Black, FillColor: White}
+	r.H3 = Styler{Font: sansFont, Style: "b", Size: 14, Spacing: 6, TextColor: Black, FillColor: White}
+	r.H4 = Styler{Font: sansFont, Style: "b", Size: 12, Spacing: 6, TextColor: Black, FillColor: White}
+	r.H5 = Styler{Font: sansFont, Style: "b", Size: 10, Spacing: 6, TextColor: Black, FillColor: White}
+	r.H6 = Styler{Font: sansFont, Style: "b", Size: 9, Spacing: 6, TextColor: Black, FillColor: White}
 
 	//r.inBlockquote = false
 	//r.inHeading = false
-	r.Blockquote = Styler{Font: sansFont, Style: "i", Size: 12, Spacing: 4, TextColor: Black, FillColor: White}
+	r.Blockquote = Styler{Font: sansFont, Style: "i", Size: 10, Spacing: 4, TextColor: Black, FillColor: White}
 
-	r.THeader = Styler{Font: sansFont, Style: "B", Size: 12, Spacing: 4, TextColor: Black, FillColor: Grey(180)}
-	r.TBody = Styler{Font: sansFont, Style: "", Size: 12, Spacing: 4, TextColor: Black, FillColor: Grey(240)}
+	r.THeader = Styler{Font: sansFont, Style: "B", Size: 10, Spacing: 4, TextColor: Black, FillColor: Grey(180)}
+	r.TBody = Styler{Font: sansFont, Style: "", Size: 10, Spacing: 4, TextColor: Black, FillColor: Grey(240)}
 
 	r.Pdf = gofpdf.New(orientation, "pt", paperSize, fontDir)
 	r.Pdf.AddPage()

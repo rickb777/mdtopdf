@@ -1,5 +1,8 @@
 package main
 
+// This is an example of loading a font and mapping a corresponding code page.
+// Generally, this approach is now obsolete, with UTF-8 providing a slicker alternative.
+
 import (
 	"flag"
 	"fmt"
